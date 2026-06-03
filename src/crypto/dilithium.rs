@@ -1,6 +1,7 @@
 use pqcrypto_dilithium::dilithium3;
 use pqcrypto_traits::sign::{PublicKey, SecretKey, DetachedSignature};
 use sha3::{Digest, Sha3_256};
+use serde::{Deserialize, Serialize};
 use hex;
 
 // Wraps a Dilithium3 key pair.
@@ -9,7 +10,7 @@ use hex;
 // We use Dilithium3 specifically because it hits the sweet spot
 // between signature size and security. Dilithium2 is faster but
 // weaker. Dilithium5 is stronger but the signatures get heavy.
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct KyveraKeyPair {
     pub public_key: Vec<u8>,
     pub secret_key: Vec<u8>,

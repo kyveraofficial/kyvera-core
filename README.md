@@ -96,23 +96,6 @@ cd kyvera-core
 cargo test
 ```
 
-Expected output:
-running 13 tests
-test types::account::tests::test_account_serialization ... ok
-test types::account::tests::test_can_afford ... ok
-test types::account::tests::test_new_account_starts_empty ... ok
-test types::account::tests::test_total_balance ... ok
-test types::account::tests::test_update_validator_tier ... ok
-test types::account::tests::test_validator_tier_from_stake ... ok
-test types::block::tests::test_block_creation ... ok
-test types::block::tests::test_block_header_creation ... ok
-test types::block::tests::test_block_serialization ... ok
-test types::transaction::tests::test_transaction_creation ... ok
-test types::transaction::tests::test_transaction_not_signed_on_creation ... ok
-test types::transaction::tests::test_transaction_serialization ... ok
-test types::transaction::tests::test_transaction_type_checks ... ok
-test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
-
 ---
 
 ## Tokenomics
