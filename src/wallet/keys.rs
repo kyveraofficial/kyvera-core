@@ -91,6 +91,20 @@ impl KyveraWallet {
     pub fn verify_address_integrity(&self) -> bool {
         self.signing_keypair.address() == self.address
     }
+
+    // Look up the spendable balance for this wallet from a given
+    // account state. In production this queries the chain state.
+    // For now it takes the balance directly — the node layer will
+    // wire this to the actual state trie in Month 5.
+    pub fn spendable_balance(&self, account: &crate::types::account::Account) -> u64 {
+        account.balance
+    }
+
+    // Total balance including staked funds.
+    // Useful for display in a wallet UI.
+    pub fn total_balance(&self, account: &crate::types::account::Account) -> u64 {
+        account.total_balance()
+    }
 }
 
 #[cfg(test)]
