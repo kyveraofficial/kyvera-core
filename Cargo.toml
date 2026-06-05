@@ -23,5 +23,6 @@ pqcrypto-traits = "0.3"
 rand = "0.8"
 aes-gcm = "0.10"
 bip39 = "2.0"
+sled = "0.34"
 
 [dev-dependencies]

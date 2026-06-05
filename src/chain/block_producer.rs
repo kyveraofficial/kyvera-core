@@ -22,7 +22,7 @@ use chrono::Utc;
 
 // Tracks the current tip of the chain — the most recent valid block.
 // Every node maintains one of these and updates it as new blocks arrive.
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, serde::Serialize, serde::Deserialize)]
 pub struct ChainTip {
     // Hash of the most recent block
     pub hash: String,

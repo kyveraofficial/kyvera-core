@@ -47,16 +47,6 @@ that have cost EVM chains billions of dollars cannot exist in KVM.
 
 ---
 
-## Project status
-
-Currently in active development. Month 1 of an 18-month roadmap to mainnet.
-
-The core data types are defined and tested. Cryptography integration is next.
-
-Full roadmap: [Kyvera 18-Month Development Roadmap](../Kyvera_Roadmap_18Month.docx)
-
----
-
 ## Repository structure
 kyvera-core/
 ├── src/
