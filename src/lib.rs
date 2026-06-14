@@ -4,3 +4,4 @@ pub mod wallet;
 pub mod chain;
 pub mod storage;
 pub mod consensus;
+pub mod mempool;
